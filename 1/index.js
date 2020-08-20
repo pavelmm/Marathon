@@ -1,16 +1,22 @@
-let firstRow = 'мама мыла раму'+' ';
-let secondRow = 'собака друг человека';
- console.log(firstRow.length);
- console.log(secondRow.length);
+
+function getRow(firstRow, secondRow) { 
+    let count1 = 0; 
+    let count2 = 0;
+for (let i = 0; i < firstRow.length ; i++) {    
+firstRow.charAt(i) ==='a' } ;
+count1++;
+for (let i = 0; i < secondRow.length ; i++) {
+ secondRow.charAt(i)  ==='a' };
+ count2++;
 
 
-for (let i = 0; i < firstRow.length ; ++i) {
-    console.log(firstRow.charAt(i));
+  if (count1 >count2) { console.log("мама мыла раму");
+  } else console.log("собака друг человека");
 }
-for (let i = 0; i < secondRow.length; ++i) {
-    console.log(secondRow.charAt(i));
-}
+    const firstRow = 'мама мыла раму'; 
+    const secondRow = 'собака друг человека';
 
+console.log(getRow(firstRow, secondRow));
 
 
 
@@ -26,15 +32,3 @@ function for1(phone) {
  return newFormat;
 } 
 console.log(for1('+7123456789'));
-
-let s1 = " 7";
-    let s2 = "(123)";
-    let s3 = "456-78-90";
-    let firstRow = s1 +s2 + s3;
-      console.log("+" + s1 + " " + s2 + " " + s3);
-    
-    for (let i = 0; i < firstRow.length ; ++i) {
-
-console.log(firstRow.charAt(i));}
-
-
