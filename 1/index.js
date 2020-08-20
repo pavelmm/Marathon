@@ -14,6 +14,19 @@ for (let i = 0; i < secondRow.length; ++i) {
 
 
 
+function for1(phone) { 
+     let newFormat = ''; 
+     for (let i =0;i <phone.lenght; i++) { 
+         newFormat += phone.charAt(i); 
+         if(i ==1) {newFormat += '(';
+        } else if (i==4){newFormat += ')';
+    } else if (i==7 || i==9){newFormat += '-';
+}
+ } 
+ return newFormat;
+} 
+console.log(for1('+7123456789'));
+
 let s1 = " 7";
     let s2 = "(123)";
     let s3 = "456-78-90";
