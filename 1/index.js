@@ -1,22 +1,45 @@
+ 1.   
+const firstRow = 'мама мыла раму';
+const secondRow = 'собака друг человека';
+В каждой из них необходимо посчитать количество букв "а" и вывести ту строку, в которой таких букв больше.
+function getRow(firstRow, secondRow) {
+}
+console.log(getRow(firstRow, secondRow)); // мама мыла раму
+
+
+
+   const firstRow = 'мама мыла раму'; 
+    const secondRow = 'собака друг человека';
+    const CHAR = 'р'
 
 function getRow(firstRow, secondRow) { 
-    let count1 = 0; 
-    let count2 = 0;
-for (let i = 0; i < firstRow.length ; i++) {    
-firstRow.charAt(i) ==='a' } ;
-count1++;
-for (let i = 0; i < secondRow.length ; i++) {
- secondRow.charAt(i)  ==='a' };
- count2++;
+    let firstResult =  countedChar (firstRow, CHAR); 
+    let secondResult =  countedChar (secondRow, CHAR); 
 
+    if (firstResult === secondResult){
+        return 'Здесь одинаковое количество букв ' +  CHAR;
+    }
 
-  if (count1 >count2) { console.log("мама мыла раму");
-  } else console.log("собака друг человека");
+    return firstResult >secondResult ? firstRow : secondRow;
 }
-    const firstRow = 'мама мыла раму'; 
-    const secondRow = 'собака друг человека';
-
+function countedChar (row, char){
+     let counted =0;
+      
+    for (let i = 0; i < row.length; i++) { 
+        if (row.charAt(i) === char ){        
+            counted++;
+        }
+    }
+    return counted;
+}
 console.log(getRow(firstRow, secondRow));
+
+2.
+Есть номер телефона из 12-ти символов: +71234567890 должен быть +7 (123) 456-78-90
+У нас должна быть функция, которая принимает телефон строкой и возвращает обратно отформатированные телефон:
+function formattedPhone(phone) {
+}
+console.log(formattedPhone('+71234567890')); // +7 (123) 456-78-90
 
 
 
